@@ -157,7 +157,7 @@ void main() {
       title: "First App",
       home: HomePage(),
       theme: ThemeData(
-        primarySwatch:Colors.red,
+        primarySwatch: Colors.red,
       ),
     ),
   );
@@ -171,10 +171,22 @@ class HomePage extends StatelessWidget {
         title: const Text("Flutter Learning"),
       ),
       body: Container(),
+      drawer: Drawer(
+          child: ListView(
+        children: <Widget>[
+          DrawerHeader(child:const Text("Hi, I'm Abrar Ali")
+          decoration: BoxDecoration( color: Colors.blue),
+          )
+        ],
+      )),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         child: Icon(Icons.edit),
       ),
     );
   }
+}
+
+class Child {
 }
