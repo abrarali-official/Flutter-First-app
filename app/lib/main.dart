@@ -174,8 +174,7 @@ class HomePage extends StatelessWidget {
       drawer: Drawer(
           child: ListView(
         children: <Widget>[
-          DrawerHeader(child:const Text("Hi, I'm Abrar Ali")
-          decoration: BoxDecoration( color: Colors.blue),
+          DrawerHeader(child:const Text("Hi, I'm Abrar Ali"),
           )
         ],
       )),
