@@ -173,8 +173,15 @@ class HomePage extends StatelessWidget {
       body: Container(),
       drawer: Drawer(
           child: ListView(
+            padding: EdgeInsets.zero,
         children: <Widget>[
-          DrawerHeader(child:const Text("Hi, I'm Abrar Ali"),
+          DrawerHeader(child: Text("Hi, I'm Abrar Ali",
+          style: TextStyle(color: Colors.white),
+          
+          ),
+          decoration: BoxDecoration(
+                color: Color.fromARGB(255, 0, 55, 133),
+          ),
           )
         ],
       )),
@@ -187,5 +194,3 @@ class HomePage extends StatelessWidget {
   }
 }
 
-class Child {
-}
