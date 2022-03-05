@@ -182,6 +182,10 @@ class HomePage extends StatelessWidget {
           decoration: BoxDecoration(
                 color: Color.fromARGB(255, 0, 55, 133),
           ),
+          ),
+          ListTile(
+            leading: Icon(Icons.person),
+            title: Text("Account"),
           )
         ],
       )),
