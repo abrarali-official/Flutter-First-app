@@ -173,15 +173,19 @@ class HomePage extends StatelessWidget {
       body: Container(),
       drawer: Drawer(
           child: ListView(
-            padding: EdgeInsets.zero,
+        padding: EdgeInsets.zero,
         children: <Widget>[
-          DrawerHeader(child: Text("Hi, I'm Abrar Ali",
-          style: TextStyle(color: Colors.white),
-          
-          ),
-          decoration: BoxDecoration(
-                color: Color.fromARGB(255, 0, 55, 133),
-          ),
+          // DrawerHeader(
+          //   child: Text(
+          //     "Hi, I'm Abrar Ali",
+          //     style: TextStyle(color: Colors.white),
+          //   ),
+          //   decoration: BoxDecoration(
+          //     color: Color.fromARGB(255, 0, 55, 133),
+          //   ),
+          // ),
+          UserAccountsDrawerHeader(accountName: Text("Abrar Ali"), accountEmail:Text("Abrarali@gmail.com"),
+          currentAccountPicture: CircleAvatar(backgroundImage: NetworkImage('https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80'),), 
           ),
           ListTile(
             leading: Icon(Icons.person),
@@ -189,7 +193,7 @@ class HomePage extends StatelessWidget {
             subtitle: Text("Personl"),
             trailing: Icon(Icons.edit),
           ),
-                    ListTile(
+          ListTile(
             leading: Icon(Icons.email),
             title: Text("Email"),
             subtitle: Text("Abrarali@gmail.com"),
@@ -205,4 +209,3 @@ class HomePage extends StatelessWidget {
     );
   }
 }
-
