@@ -186,6 +186,14 @@ class HomePage extends StatelessWidget {
           ListTile(
             leading: Icon(Icons.person),
             title: Text("Account"),
+            subtitle: Text("Personl"),
+            trailing: Icon(Icons.edit),
+          ),
+                    ListTile(
+            leading: Icon(Icons.email),
+            title: Text("Email"),
+            subtitle: Text("Abrarali@gmail.com"),
+            trailing: Icon(Icons.send),
           )
         ],
       )),
