@@ -157,7 +157,7 @@ void main() {
       title: "First App",
       home: HomePage(),
       theme: ThemeData(
-        primarySwatch: Colors.red,
+        primarySwatch: Colors.blue,
       ),
     ),
   );
@@ -184,8 +184,13 @@ class HomePage extends StatelessWidget {
           //     color: Color.fromARGB(255, 0, 55, 133),
           //   ),
           // ),
-          UserAccountsDrawerHeader(accountName: Text("Abrar Ali"), accountEmail:Text("Abrarali@gmail.com"),
-          currentAccountPicture: CircleAvatar(backgroundImage: NetworkImage('https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80'),), 
+          UserAccountsDrawerHeader(
+            accountName: Text("Abrar Ali"),
+            accountEmail: Text("Abrarali@gmail.com"),
+            currentAccountPicture: CircleAvatar(
+              backgroundImage: NetworkImage(
+                  'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80'),
+            ),
           ),
           ListTile(
             leading: Icon(Icons.person),
